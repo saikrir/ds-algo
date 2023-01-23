@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ds-algo.iml" filepath="$PROJECT_DIR$/.idea/modules/ds-algo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/ds-algo.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ds-algo.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/ds-algo.test.iml" filepath="$PROJECT_DIR$/.idea/modules/ds-algo.test.iml" />
     </modules>

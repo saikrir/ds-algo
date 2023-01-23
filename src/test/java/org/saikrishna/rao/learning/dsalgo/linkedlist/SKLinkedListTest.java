@@ -39,7 +39,8 @@ class SKLinkedListTest {
         skLinkedList.push(10);
         skLinkedList.push(20);
         skLinkedList.push(30);
-        assertThat(skLinkedList.pop().getData()).isEqualTo(30);
+        assertThat(skLinkedList.pop().getData()).isEqualTo(10);
+        assertThat(skLinkedList.getHead().getData()).isNotNull().isEqualTo(20);
         assertThat(skLinkedList.count()).isEqualTo(2);
     }
 

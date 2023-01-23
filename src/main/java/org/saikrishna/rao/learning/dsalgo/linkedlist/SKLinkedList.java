@@ -39,18 +39,13 @@ public class SKLinkedList<T extends Comparable<T>> {
     }
 
     public Node<T> pop() {
-        if(this.headNode.isEmpty()) return null;
-        Optional<Node<T>> tailNode = tailNode();
-        if (tailNode.isPresent()) {
-            Node<T> lastNode = tailNode.get();
-            Optional<Node<T>> tNode = previousNodeTo(lastNode);
-            if(tNode.isPresent()){
-                tNode.get().setNextNode(null);
-                this.count = this.count - 1;
-                return lastNode;
-            }
-        }
-        return null;
+        if (this.headNode.isEmpty()) return null;
+
+        Node<T> headModeUW = this.headNode.get();
+
+        this.headNode = headModeUW.getNextNode();
+        this.count = this.count - 1;
+        return headModeUW;
     }
 
     public Optional<Node<T>> previousNodeTo(Node<T> aNode) {
